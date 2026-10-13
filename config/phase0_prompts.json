@@ -39,14 +39,14 @@
     "genre": "cafe_jazz",
     "scene": "겨울밤 골목 카페",
     "tags": "smooth mellow jazz instrumental, breathy tenor saxophone melody, soft rhodes electric piano, brushed drums, warm bass, winter night, lonely street cafe, nostalgic, no vocals",
-    "bpm": 68, "keyscale": "B flat major", "timesignature": "4"
+    "bpm": 68, "keyscale": "Bb major", "timesignature": "4"
   },
   {
     "id": "piano_nocturne",
     "genre": "piano",
     "scene": "고요한 밤의 녹턴",
     "tags": "solo piano nocturne instrumental, soft felt piano, slow emotional melody, gentle sustain pedal, intimate room ambience, quiet night, peaceful, melancholic, meditation, no vocals",
-    "bpm": 60, "keyscale": "D flat major", "timesignature": "4"
+    "bpm": 60, "keyscale": "Db major", "timesignature": "4"
   },
   {
     "id": "piano_ambient",
@@ -67,6 +67,6 @@
     "genre": "lofi",
     "scene": "비 오는 창가",
     "tags": "chill lofi instrumental, soft jazzy piano loop, lazy drums with swing, deep warm bass, rain ambience, lonely rainy window, nostalgic, relaxing, no vocals",
-    "bpm": 72, "keyscale": "E flat major", "timesignature": "4"
+    "bpm": 72, "keyscale": "Eb major", "timesignature": "4"
   }
 ]

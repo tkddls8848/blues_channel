@@ -6,7 +6,7 @@
 음악 팟은 remote_coding/gpu-art 로 켠다(README "음악 팟"). 터널 주소는 COMFY_URL(기본 http://127.0.0.1:8189).
 곡마다 <id>_<model>_s<seed>.flac 과 같은 이름의 .json(프롬프트 · 모델 · 시드 · 걸린 시간)을 남긴다.
 """
-import argparse, json, os, sys, time, urllib.parse, urllib.request, uuid
+import argparse, json, os, sys, time, urllib.error, urllib.parse, urllib.request, uuid
 from pathlib import Path
 
 for _s in (sys.stdout, sys.stderr):
@@ -52,20 +52,34 @@ def workflow(p, model, seed, seconds):
     }
 
 
-def check_nodes():
-    """보낼 노드 입력 이름이 서버의 ComfyUI 와 맞는지 먼저 본다 — 판이 바뀌면 여기서 멈춘다."""
+def combo_options(spec):
+    """object_info 의 입력 정의에서 고를 수 있는 값 목록 (고르는 입력이 아니면 None)."""
+    t = spec[0] if isinstance(spec, list) and spec else None
+    if isinstance(t, list):
+        return t
+    if t == 'COMBO' and len(spec) > 1:
+        return spec[1].get('options')
+    return None
+
+
+def check_nodes(prompts, model, seconds):
+    """보낼 노드 입력 이름 · 고르는 값(키 · 박자 등)이 서버의 ComfyUI 와 맞는지 먼저 본다 — 하나라도 틀리면 GPU 를 쓰기 전에 멈춘다."""
     info = http('/object_info', timeout=120)
-    wf = workflow({'id': 'x', 'tags': '', 'bpm': 60, 'keyscale': 'C major'}, 'turbo', 0, 10)
     bad = []
-    for node in wf.values():
-        spec = info.get(node['class_type'])
-        if not spec:
-            bad.append(f'{node["class_type"]}: 서버에 없는 노드')
-            continue
-        known = set(spec['input'].get('required', {})) | set(spec['input'].get('optional', {}))
-        bad += [f'{node["class_type"]}.{k}: 없는 입력 (있는 것: {sorted(known)})' for k in node['inputs'] if k not in known]
+    for p in prompts:
+        for node in workflow(p, model, 0, seconds).values():
+            spec = info.get(node['class_type'])
+            if not spec:
+                bad.append(f'{node["class_type"]}: 서버에 없는 노드')
+                continue
+            known = {**spec['input'].get('required', {}), **spec['input'].get('optional', {})}
+            for k, v in node['inputs'].items():
+                if k not in known:
+                    bad.append(f'{node["class_type"]}.{k}: 없는 입력 (있는 것: {sorted(known)})')
+                elif not isinstance(v, list) and (opts := combo_options(known[k])) is not None and v not in opts:
+                    bad.append(f'{p["id"]}: {node["class_type"]}.{k}={v!r} 는 고를 수 없는 값 (예: {opts[:8]})')
     if bad:
-        sys.exit('노드 입력이 서버와 다르다:\n  ' + '\n  '.join(bad))
+        sys.exit('서버와 맞지 않는다:\n  ' + '\n  '.join(dict.fromkeys(bad)))
 
 
 def run(p, model, seed, seconds, out):
@@ -74,14 +88,17 @@ def run(p, model, seed, seconds, out):
         print(f'  -- 있음 {stem}')
         return
     t0 = time.time()
-    r = http('/prompt', {'prompt': workflow(p, model, seed, seconds), 'client_id': uuid.uuid4().hex})
+    try:
+        r = http('/prompt', {'prompt': workflow(p, model, seed, seconds), 'client_id': uuid.uuid4().hex})
+    except urllib.error.HTTPError as e:   # 400 이면 ComfyUI 가 어느 입력이 틀렸는지 본문에 적어 준다
+        return f'{stem}: /prompt {e.code} {e.read().decode("utf-8", "replace")[:800]}'
     pid = r['prompt_id']
     while True:
         h = http(f'/history/{pid}').get(pid)
         if h and h.get('status', {}).get('completed'):
             break
         if h and h.get('status', {}).get('status_str') == 'error':
-            sys.exit(f'생성 실패 {stem}: {json.dumps(h["status"], ensure_ascii=False)[:800]}')
+            return f'{stem}: {json.dumps(h["status"], ensure_ascii=False)[:800]}'
         time.sleep(3)
     files = [a for o in h['outputs'].values() for a in o.get('audio', [])]
     for a in files:
@@ -109,12 +126,14 @@ def main():
         prompts = [p for p in prompts if p['id'] in keep]
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
-    check_nodes()
+    check_nodes(prompts, a.model, a.seconds)
     seeds = [int(s) for s in a.seeds.split(',')]
     print(f'==> {len(prompts)}곡 × 시드 {len(seeds)}개 · {a.model} · {a.seconds}초 → {out}')
-    for p in prompts:
-        for s in seeds:
-            run(p, a.model, s, a.seconds, out)
+    failed = [f for p in prompts for s in seeds if (f := run(p, a.model, s, a.seconds, out))]   # 한 곡이 실패해도 나머지는 만든다
+    for f in failed:
+        print('  xx ' + f, file=sys.stderr)
+    if failed:
+        sys.exit(f'{len(failed)}곡 실패')
 
 
 if __name__ == '__main__':
