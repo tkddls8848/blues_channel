@@ -1,0 +1,15 @@
+# 실행별 산출물 (음악 · 그림 · 영상) — 용량이 커서 커밋하지 않는다
+runs/
+*.flac
+*.wav
+*.mp3
+*.m4a
+*.ogg
+
+# 비밀 · 토큰
+.env
+*.token.json
+client_secret*.json
+
+__pycache__/
+.venv/

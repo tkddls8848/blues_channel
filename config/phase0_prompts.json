@@ -1,0 +1,72 @@
+[
+  {
+    "id": "blues_slow_bar",
+    "genre": "blues",
+    "scene": "비 오는 밤, 문 닫은 바",
+    "tags": "slow blues instrumental, lonely late night, expressive clean electric blues guitar lead with gentle bends, warm hammond organ pads, soft brushed drums, walking upright bass, smoky empty bar, rain outside, intimate, melancholic, no vocals",
+    "bpm": 64, "keyscale": "A minor", "timesignature": "4"
+  },
+  {
+    "id": "blues_night_train",
+    "genre": "blues",
+    "scene": "야간열차",
+    "tags": "mellow blues instrumental, night train journey, fingerpicked acoustic slide guitar, soft harmonica in the distance, light shuffle rhythm, warm bass, nostalgic, lonely, cinematic, no vocals",
+    "bpm": 76, "keyscale": "E major", "timesignature": "4"
+  },
+  {
+    "id": "blues_jazz_ballad",
+    "genre": "blues",
+    "scene": "혼자 남은 새벽 재즈 바",
+    "tags": "blues jazz ballad instrumental, warm hollow-body jazz guitar playing bluesy melody, soft piano comping, brushed snare, upright bass, after hours, quiet, lonely, tender, no vocals",
+    "bpm": 60, "keyscale": "D minor", "timesignature": "4"
+  },
+  {
+    "id": "cafe_jazz_bookstore",
+    "genre": "cafe_jazz",
+    "scene": "눈 오는 밤, 서점 직원의 시간",
+    "tags": "soft late-night jazz trio instrumental, gentle piano melody, brushed drums, warm upright bass, cozy small bookstore, snow falling outside, calm, intimate, reading music, no vocals",
+    "bpm": 72, "keyscale": "F major", "timesignature": "4"
+  },
+  {
+    "id": "cafe_jazz_afternoon",
+    "genre": "cafe_jazz",
+    "scene": "카페 직원의 고요한 오후",
+    "tags": "relaxing cafe jazz instrumental, nylon guitar and soft piano, light bossa nova groove, warm upright bass, quiet coffee shop afternoon, sunlight, calm, no vocals",
+    "bpm": 88, "keyscale": "G major", "timesignature": "4"
+  },
+  {
+    "id": "cafe_jazz_sax",
+    "genre": "cafe_jazz",
+    "scene": "겨울밤 골목 카페",
+    "tags": "smooth mellow jazz instrumental, breathy tenor saxophone melody, soft rhodes electric piano, brushed drums, warm bass, winter night, lonely street cafe, nostalgic, no vocals",
+    "bpm": 68, "keyscale": "B flat major", "timesignature": "4"
+  },
+  {
+    "id": "piano_nocturne",
+    "genre": "piano",
+    "scene": "고요한 밤의 녹턴",
+    "tags": "solo piano nocturne instrumental, soft felt piano, slow emotional melody, gentle sustain pedal, intimate room ambience, quiet night, peaceful, melancholic, meditation, no vocals",
+    "bpm": 60, "keyscale": "D flat major", "timesignature": "4"
+  },
+  {
+    "id": "piano_ambient",
+    "genre": "piano",
+    "scene": "세상 가장 고요한 곳",
+    "tags": "ambient neoclassical piano instrumental, sparse piano notes, soft string pads, warm reverb, calm, spacious, healing, sleep, no drums, no vocals",
+    "bpm": 56, "keyscale": "C major", "timesignature": "4"
+  },
+  {
+    "id": "lofi_study",
+    "genre": "lofi",
+    "scene": "새벽 공부",
+    "tags": "lo-fi hip hop instrumental, dusty boom bap drums, mellow rhodes chords, warm bass, vinyl crackle, tape saturation, late night study, calm, cozy, no vocals",
+    "bpm": 78, "keyscale": "C minor", "timesignature": "4"
+  },
+  {
+    "id": "lofi_rain",
+    "genre": "lofi",
+    "scene": "비 오는 창가",
+    "tags": "chill lofi instrumental, soft jazzy piano loop, lazy drums with swing, deep warm bass, rain ambience, lonely rainy window, nostalgic, relaxing, no vocals",
+    "bpm": 72, "keyscale": "E flat major", "timesignature": "4"
+  }
+]
