@@ -1,0 +1,42 @@
+[
+  {
+    "id": "blues_slow_bar",
+    "genre": "blues",
+    "scene": "비 오는 밤, 문 닫은 바",
+    "note": "Phase 0 A 합격 — 프롬프트 그대로, 후보만 늘림",
+    "tags": "slow blues instrumental, lonely late night, expressive clean electric blues guitar lead with gentle bends, warm hammond organ pads, soft brushed drums, walking upright bass, smoky empty bar, rain outside, intimate, melancholic, no vocals",
+    "bpm": 64, "keyscale": "A minor", "timesignature": "4"
+  },
+  {
+    "id": "blues_night_train",
+    "genre": "blues",
+    "scene": "야간열차",
+    "note": "Phase 0 탈락(안 끌림) — 블루스 색을 분명하게: 12마디 셔플, 리조네이터 슬라이드, 하모니카 문답",
+    "tags": "acoustic delta blues instrumental, 12-bar blues shuffle, resonator guitar with bottleneck slide, harmonica answering the guitar phrases, steady train rhythm on brushed snare, upright bass, late night train, lonely, warm, nostalgic, no vocals",
+    "bpm": 84, "keyscale": "E major", "timesignature": "4"
+  },
+  {
+    "id": "blues_jazz_ballad",
+    "genre": "blues",
+    "scene": "혼자 남은 새벽 재즈 바",
+    "note": "Phase 0 탈락(안 끌림) — 재즈보다 블루스 쪽으로: 단조 블루스, 기타 벤딩 · 비브라토, 오르간",
+    "tags": "slow minor blues ballad instrumental, clean electric guitar melody with expressive bends and vibrato, soulful phrasing, soft hammond organ, gentle piano fills, brushed drums, upright bass, after hours empty bar, lonely, tender, no vocals",
+    "bpm": 58, "keyscale": "D minor", "timesignature": "4"
+  },
+  {
+    "id": "piano_ambient",
+    "genre": "piano",
+    "scene": "세상 가장 고요한 곳",
+    "note": "Phase 0 탈락(A 반복, B 불협화음) — 협화음 · 변주를 명시, 길이 2:30",
+    "tags": "solo piano instrumental, slow and calm, consonant diatonic harmony, simple singing melody that slowly develops and varies, soft felt piano, gentle string pad swells in the second half, warm room reverb, peaceful, healing, sleep, no drums, no vocals",
+    "bpm": 60, "keyscale": "C major", "timesignature": "4"
+  },
+  {
+    "id": "lofi_study",
+    "genre": "lofi",
+    "scene": "새벽 공부",
+    "note": "Phase 0 탈락(로파이 느낌 없음) — 로파이 힙합 장치를 직접: 로우패스, 사이드체인, 스윙 붐뱁, 테이프 흔들림",
+    "tags": "lo-fi hip hop beat, chillhop instrumental, jazzy rhodes chords through a low-pass filter, sidechained pads, dusty swung boom bap drums, deep warm bass, vinyl crackle, tape wobble, detuned keys, late night study, mellow, cozy, no vocals",
+    "bpm": 80, "keyscale": "A minor", "timesignature": "4"
+  }
+]

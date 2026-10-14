@@ -5,6 +5,7 @@
 - 작성일: 2026-10-13
 - 상태: 초안 (결정 필요 항목은 §10 참고)
 - 벤치마크: [BLUE playlist (@blue_playlist)](https://www.youtube.com/@blue_playlist) — §0
+- 경로: 이 문서의 `config/` · `runs/` · `docs/` 는 저장소의 `lonely_blues/` 아래다. 생성 도구 `tools/` 는 저장소 최상위에서 `latin_chant/` 와 같이 쓴다.
 
 ---
 
@@ -240,7 +241,7 @@ loop: snow_falling            # Wan 2.2 루프 종류 (없으면 정지 화면)
 - **스케줄링:** Windows 작업 스케줄러 또는 cron (Phase 3)
 
 ```
-blues_channel/
+blues_channel/lonely_blues/
 ├── config/
 │   ├── scenes/            # 영상 1개 = 장면 파일 1개 (제목·시·음악·그림 프롬프트)
 │   ├── genres/            # cafe_jazz.yaml, piano.yaml, lofi.yaml, blues.yaml (악기·BPM·이펙트)
@@ -293,8 +294,68 @@ blues_channel/
 - [ ] 벤치마크 인기 영상 3개에서 곡 구성(악기·템포·곡 길이·곡 수)을 메모해 장르 프리셋 기준으로 삼기
 - [x] gpu-art: `GPU_MODELS_FILE` 지원 추가 + `models-music.txt` 작성 (ACE-Step 1.5 XL, sha256 고정) — 그림·영상(Qwen-Image · Wan 2.2) 모델 목록은 다음에
 - [x] ComfyUI v0.39.0에서 ACE-Step 1.5 노드 동작 확인 (기본 디스크 80GB로 충분)
-- [ ] Phase 0 시험곡(`runs/phase0/`) 청취 → turbo vs sft, 장르별 합격 여부 기록
+- [x] Phase 0 시험곡(`lonely_blues/runs/phase0/`) 청취 → turbo vs sft, 장르별 합격 여부 기록 (§11-1)
 - [ ] Phase 0: 카페재즈·피아노 테스트 프롬프트 10개 작성 → ACE-Step으로 생성 → 벤치마크 곡과 비교
 - [ ] 사용 모델(ACE-Step 판, Qwen-Image, Wan 2.2)과 후보 API의 라이선스·약관에서 상업 이용 조항을 발췌해 `docs/licenses.md`에 정리
 - [ ] Google Cloud 프로젝트 생성, YouTube Data API 활성화, OAuth 클라이언트 발급
 - [ ] 프로젝트 스캐폴딩 (`uv init`, 디렉터리 구조, CLI 골격)
+
+### 11-1. Phase 0 청취 판정 (2026-10-14)
+
+ACE-Step 1.5 XL, 3분, 장면 10개 × turbo 시드 1·2(A·B) + sft 5곡. 재생 페이지에서 -14 LUFS로 맞춰 들었다.
+
+| 장면 | 판정 | 메모 |
+|---|---|---|
+| blues_slow_bar | **A** | |
+| blues_night_train | 탈락 | 별로 안 끌림 |
+| blues_jazz_ballad | 탈락 | 별로 안 끌림 |
+| cafe_jazz_bookstore | **B** | |
+| cafe_jazz_afternoon | **B** | |
+| cafe_jazz_sax | **A** | 테마에 더 충실한 느낌 |
+| piano_nocturne | **B** | |
+| piano_ambient | 탈락 | A는 3분을 다 채우지 못하고 같은 구절을 반복, B는 불협화음이 심함. 둘 다 같은 구절 반복 |
+| lofi_study | 탈락 | 로파이 느낌이 안 나고 주제가 전달되지 않음. B가 끊긴다고 들림(아래) |
+| lofi_rain | **B** | 로파이 주제에 맞게 구현됨 |
+
+- **sft 탈락:** 끌리지 않는다. 시간도 turbo(약 35초)의 두 배다. 앞으로는 **turbo만** 쓴다.
+- **A와 B의 성향:** A는 주제에 충실하게 시도하지만 성공률이 낮고, B는 안전하게 가는 느낌이다.
+  - 다만 A와 B는 같은 설정에 시드만 다르다. 이 차이는 시드 운이지 모델의 체계적 성향이 아닐 가능성이 크다.
+- **합격률:** 장면 기준 6/10, 곡 기준 6/20(30%)
+  - 곡당 합격률이 30%라면 장면마다 후보를 4개 만들면 하나 이상 합격할 확률이 약 76%, 6개면 약 88%다.
+  - → 생성 파이프라인은 **장면마다 시드 4~6개를 만들고 사람이 고르는 구조**로 간다(§10-6 검수 범위와 연결).
+- **채널 대표 장르인 블루스가 1/3로 가장 약하다.**
+  - 프롬프트를 고친다: 악기를 좁히고 bpm과 shuffle을 명시한다.
+  - Suno 기준선과 나란히 다시 들어 본다.
+- **lofi_study 다시 쓰기:** "lo-fi hip hop"을 더 직접적으로 쓴다(예: sidechained, low-pass filtered, detuned keys, 70-85 BPM).
+- **기술 문제**
+  - 모든 곡 끝에 6~9초 무음이 있다. 모델이 3분보다 일찍 끝낸다. 후처리에서 잘라내고 크로스페이드로 잇는다.
+  - 3분짜리는 반복이 생긴다(piano_ambient). 곡 길이를 2분 안팎으로 줄이는 것을 시험한다.
+  - lofi_study의 "끊김": 원본에서 무음 구간을 찾아보면 B(시드 2)에는 곡 중간 끊김이 없다. A(시드 1)에는 소리가 순간 -45 ~ -68dB까지 떨어지는 곳이 여러 번 있다(5.8초, 11.5~11.8초 등).
+    - 들은 것이 A였거나, 재생 페이지의 스트리밍 끊김이었을 수 있다.
+
+### 11-2. Phase 0b — 판정 반영 재생성 (2026-10-14)
+
+- **설정:** `config/phase0b_prompts.json`, turbo만, 시드 3~6, 150초. 20곡, 곡당 약 31초, 결과는 `runs/phase0b/`.
+- **장면별로 바꾼 것**
+  - blues_slow_bar: 프롬프트 그대로 두고 후보만 늘렸다.
+  - blues_night_train: 12마디 셔플, 리조네이터 슬라이드, 하모니카 문답을 넣었다.
+  - blues_jazz_ballad: 재즈 대신 단조 블루스 발라드로 바꾸고 기타 벤딩·비브라토를 넣었다.
+  - piano_ambient: 협화음과 멜로디 변주를 명시했다.
+  - lofi_study: 로우패스, 사이드체인, 스윙 붐뱁, 테이프 흔들림 같은 로파이 힙합 장치를 직접 적었다.
+- **청취 판정:** 아직 듣지 않았다.
+- **청취 페이지:** https://claude.ai/artifact/FCo1EEsiNmJyrxLmbm5ELr (비공개)
+
+### 11-3. 음질 진단 (2026-10-14)
+
+| 문제 | 측정값 | 들리는 증상 |
+|---|---|---|
+| 클리핑 | 원본 6곡 중 5곡이 최대치(1.00)에 닿았고 샘플의 0.02~0.1%가 잘림 | 큰 소리에서 깨짐, 거친 질감 |
+| 고음 부족 | 일부 곡이 8kHz 이상 -50~-62dB (정상 곡은 -30~-35dB). 예: piano_ambient s3, 시험 1 slow_bar A | 먹먹함 |
+| 스테레오 이상 | piano_ambient s3 는 좌우 차이 성분이 가운데 성분보다 큼(+1.9dB) | 비고 위상이 꼬인 느낌, 모노에서 빠짐 |
+
+**처방** (비용이 적은 순서)
+
+1. **생성 단계:** `tools/ace_step.py` 에서 SaveAudio 직전에 `AudioAdjustVolume`(-4dB) 노드를 넣는다. 모델 출력이 1.0을 넘는데 그대로 저장돼 잘리는 것을 막는다. — **다음 할 일**
+2. **후처리 마스터링(로컬 ffmpeg):** `adeclip` 으로 잘린 파형 복원, 먹먹한 곡에만 high-shelf EQ, 좌우 폭 보정, 가벼운 압축, -14 LUFS. §4 후처리에 그대로 쓴다. 이번 20곡 중 3~4곡을 원본·처리본으로 나란히 비교한다.
+3. **sft 다듬기 패스:** 고른 turbo 곡을 출발점으로 sft를 denoise 0.2~0.3으로 한 번 더 돌린다. 구성은 두고 질감만 다시 그린다.
+4. **AI 업스케일(AudioSR 등):** 고음을 새로 채운다. 팟에 설치해야 하고 라이선스도 확인해야 한다.

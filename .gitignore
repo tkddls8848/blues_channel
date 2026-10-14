@@ -6,6 +6,9 @@ runs/
 *.m4a
 *.ogg
 
+# 참조용 원곡 음원과 그 분석 — 저작권이 있어 커밋 · 공개하지 않는다
+latin_chant/ref/
+
 # 비밀 · 토큰
 .env
 *.token.json
