@@ -31,7 +31,7 @@ def sound(s):
     for a, b in (('ae', 'e'), ('oe', 'e'), ('ph', 'f'), ('ch', 'k'), ('qu', 'k'), ('x', 'ks'), ('h', ''), ('j', 'i'), ('y', 'i'),
                  ('v', 'u'), ('w', 'u'), ('c', 'k'), ('q', 'k'), ('z', 's'), ('ki', 'si'), ('ke', 'se')):
         s = s.replace(a, b)
-    return re.sub(r'(.)+', r'', s)
+    return re.sub(r'(.)\1+', r'\1', s)
 
 
 def grams(s):
