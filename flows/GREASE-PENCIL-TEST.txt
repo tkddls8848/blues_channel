@@ -1,0 +1,22 @@
+Blender Grease Pencil 기능 확인
+
+설치본: Blender 4.5.9 LTS
+실행 코드: scripts/grease_pencil_probe.py
+편집 파일: renders/blender-duel-v2/grease-pencil-test/bakkuo-grease-pencil-test.blend
+렌더 이미지: 같은 폴더의 grease-pencil-key-pose.png
+
+실제 GREASEPENCIL 객체에 두 개의 레이어가 있다.
+01 / generated character contours: Line Art modifier로 인물 메시의 윤곽을 추출한다.
+02 / editable pressure strokes: 375~377프레임에 점별 굵기가 다른 시험 잔상을 넣었다.
+375프레임에서 저장했으며 Grease Pencil 객체가 선택되어 있다.
+Draw Mode에서 두 번째 레이어의 선을 수정하거나 새로 그릴 수 있다.
+
+인물의 3D 채움 위에 Grease Pencil 선을 올린 기술 시험이다.
+인물 전체를 손그림으로 다시 작화한 결과가 아니다.
+35초 MP4는 3D 연출 수정본이며 Grease Pencil 전체 작화본은 아직 없다.
+기존 결과를 덮어쓰지 않고 별도 .blend 파일로 저장했다.
+외부 생성 API를 호출하지 않는다.
+
+공식 문서
+https://docs.blender.org/manual/en/4.5/grease_pencil/introduction.html
+https://docs.blender.org/manual/en/4.5/grease_pencil/modifiers/generate/line_art.html

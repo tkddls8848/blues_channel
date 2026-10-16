@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "run_id": "duel-v2",
+  "song": {
+    "url": "https://www.youtube.com/watch?v=p4aCyJtGVm4",
+    "start": 170,
+    "end": 190,
+    "audio": "assets/audio/bakkuo-170-190.wav"
+  },
+  "pricing_checked": "2026-10-17",
+  "shots": [
+    {
+      "id": "A",
+      "title": "무기 옆 진입",
+      "image": "assets/duel-v2/shot-A.png",
+      "start": 170,
+      "end": 173,
+      "generation_seconds": 4,
+      "trim_seconds": 3,
+      "playback_speed": 1.2,
+      "prompt": "Strictly 2D hand-drawn black ink action animation on pale aged Korean hanji, matching the supplied drawing throughout. Thin decisive brush contours, flat black shapes, bare-paper highlights, selective hatching; no volumetric modeling. Fast pose-to-pose action with distinct silhouettes and sharply timed spacing. Attack travel is a brief 0.2–0.4 second burst, impact is at most 1–2 frames, recoil immediately follows. No slow motion, no slow windup, no continuous syrupy easing. Cloth follows the body's acceleration instead of floating independently. Preserve straight thin sword edges and rigid limb proportions. Same original lean adult swordsmen: protagonist's low satgat hides eyes and nose, fitted frayed dark robe; opponent's lean angular face and narrow intent eyes, low open helmet, fitted narrow lamellar armor. Each has exactly one exceptionally long narrow single-edged blade, small guard, short blunt handle; empty scabbards at left hip. No speech, singing, added music, text or logos.\n\nCamera stays tightly beside the hero's right forearm, INSIDE his guard, as in the first frame. Never pull out to an external full-body view. At 0.2 seconds the enemy makes one sharp downward diagonal cut. The hero redirects with a short rising parry; blades tap at about 0.6 seconds and separate immediately. The camera receives one tiny impulsive recoil, then tracks the narrow blade as it returns into a taut guard by 1.8 seconds. A second short feint, not a full repeated attack, maintains pressure. Do not make the fighters hold crossed swords for seconds.",
+      "negative_prompt": "CGI, 3D rendering, soft airbrushed skin, rounded cartoon face, bulky armor, short broad sword, cleaver, double-ended blade, duplicate sword, rubber arms, morphing hands, melting ink, slow motion, floating bodies, languid motion, blended frames, camera orbit, giant particle cloud, colored pigment, graphic injury"
+    },
+    {
+      "id": "B",
+      "title": "짧은 공방",
+      "image": "assets/duel-v2/shot-B.png",
+      "start": 173,
+      "end": 176,
+      "generation_seconds": 4,
+      "trim_seconds": 3,
+      "playback_speed": 1.2,
+      "prompt": "Strictly 2D hand-drawn black ink action animation on pale aged Korean hanji, matching the supplied drawing throughout. Thin decisive brush contours, flat black shapes, bare-paper highlights, selective hatching; no volumetric modeling. Fast pose-to-pose action with distinct silhouettes and sharply timed spacing. Attack travel is a brief 0.2–0.4 second burst, impact is at most 1–2 frames, recoil immediately follows. No slow motion, no slow windup, no continuous syrupy easing. Cloth follows the body's acceleration instead of floating independently. Preserve straight thin sword edges and rigid limb proportions. Same original lean adult swordsmen: protagonist's low satgat hides eyes and nose, fitted frayed dark robe; opponent's lean angular face and narrow intent eyes, low open helmet, fitted narrow lamellar armor. Each has exactly one exceptionally long narrow single-edged blade, small guard, short blunt handle; empty scabbards at left hip. No speech, singing, added music, text or logos.\n\nKeep this extreme hand-and-blade camera; faces and torsos stay outside the crop. Continue from the first-frame blade bind. The hero quickly rotates his wrist, the two long thin blades slide and snap apart in 0.4 seconds. The armored wrist checks the hero's next short flick once at about 1 second. Recoil sharply and recover into two separated guards. Hands and small sword guards remain coherent; no sparks concealing contact, no third blade. The swords are rigid, very fast precise lines, never wobbly rods.",
+      "negative_prompt": "CGI, 3D rendering, soft airbrushed skin, rounded cartoon face, bulky armor, short broad sword, cleaver, double-ended blade, duplicate sword, rubber arms, morphing hands, melting ink, slow motion, floating bodies, languid motion, blended frames, camera orbit, giant particle cloud, colored pigment, graphic injury"
+    },
+    {
+      "id": "C",
+      "title": "공격선 이탈",
+      "image": "assets/duel-v2/shot-C.png",
+      "start": 176,
+      "end": 180,
+      "generation_seconds": 4,
+      "trim_seconds": 4,
+      "playback_speed": 1,
+      "prompt": "Strictly 2D hand-drawn black ink action animation on pale aged Korean hanji, matching the supplied drawing throughout. Thin decisive brush contours, flat black shapes, bare-paper highlights, selective hatching; no volumetric modeling. Fast pose-to-pose action with distinct silhouettes and sharply timed spacing. Attack travel is a brief 0.2–0.4 second burst, impact is at most 1–2 frames, recoil immediately follows. No slow motion, no slow windup, no continuous syrupy easing. Cloth follows the body's acceleration instead of floating independently. Preserve straight thin sword edges and rigid limb proportions. Same original lean adult swordsmen: protagonist's low satgat hides eyes and nose, fitted frayed dark robe; opponent's lean angular face and narrow intent eyes, low open helmet, fitted narrow lamellar armor. Each has exactly one exceptionally long narrow single-edged blade, small guard, short blunt handle; empty scabbards at left hip. No speech, singing, added music, text or logos.\n\nKeep the distant low environmental camera fixed. Both feet start grounded. At 0.15 seconds the enemy drives one fast diagonal cut downward. The hero pushes off his rear foot and slips sideways just outside the attack line in under 0.5 seconds; his low torso passes beneath the long blade. The enemy's blade reaches the ground at about 0.8 seconds. The hero immediately plants his other foot close to the enemy's weapon side, ready to counter. Show quick hip-led footwork and a definite stop, not a long floating lunge or backward walk. End poised with clear changed distance, no repeated attack.",
+      "negative_prompt": "CGI, 3D rendering, soft airbrushed skin, rounded cartoon face, bulky armor, short broad sword, cleaver, double-ended blade, duplicate sword, rubber arms, morphing hands, melting ink, slow motion, floating bodies, languid motion, blended frames, camera orbit, giant particle cloud, colored pigment, graphic injury"
+    },
+    {
+      "id": "D",
+      "title": "상대의 짧은 반응",
+      "image": "assets/duel-v2/shot-D.png",
+      "start": 180,
+      "end": 182,
+      "generation_seconds": 4,
+      "trim_seconds": 2,
+      "playback_speed": 1,
+      "prompt": "Strictly 2D hand-drawn black ink action animation on pale aged Korean hanji, matching the supplied drawing throughout. Thin decisive brush contours, flat black shapes, bare-paper highlights, selective hatching; no volumetric modeling. Fast pose-to-pose action with distinct silhouettes and sharply timed spacing. Attack travel is a brief 0.2–0.4 second burst, impact is at most 1–2 frames, recoil immediately follows. No slow motion, no slow windup, no continuous syrupy easing. Cloth follows the body's acceleration instead of floating independently. Preserve straight thin sword edges and rigid limb proportions. Same original lean adult swordsmen: protagonist's low satgat hides eyes and nose, fitted frayed dark robe; opponent's lean angular face and narrow intent eyes, low open helmet, fitted narrow lamellar armor. Each has exactly one exceptionally long narrow single-edged blade, small guard, short blunt handle; empty scabbards at left hip. No speech, singing, added music, text or logos.\n\nKeep a tight static three-quarter face close-up on this SAME lean opponent. He suddenly darts his narrow eyes toward the threat at lower left, jaw tightens and head makes one short sharp turn within 0.4 seconds. His brow changes from control to alert recognition, not a cartoon bulging-eyed scream. The foreground blade edge moves briefly across the lower frame without touching him. Keep exactly this crisp ink facial structure; do not add realistic skin shading or replace him with a different actor.",
+      "negative_prompt": "CGI, 3D rendering, soft airbrushed skin, rounded cartoon face, bulky armor, short broad sword, cleaver, double-ended blade, duplicate sword, rubber arms, morphing hands, melting ink, slow motion, floating bodies, languid motion, blended frames, camera orbit, giant particle cloud, colored pigment, graphic injury"
+    },
+    {
+      "id": "E",
+      "title": "빈틈으로 반격",
+      "image": "assets/duel-v2/shot-E.png",
+      "start": 182,
+      "end": 186,
+      "generation_seconds": 4,
+      "trim_seconds": 4,
+      "playback_speed": 1,
+      "prompt": "Strictly 2D hand-drawn black ink action animation on pale aged Korean hanji, matching the supplied drawing throughout. Thin decisive brush contours, flat black shapes, bare-paper highlights, selective hatching; no volumetric modeling. Fast pose-to-pose action with distinct silhouettes and sharply timed spacing. Attack travel is a brief 0.2–0.4 second burst, impact is at most 1–2 frames, recoil immediately follows. No slow motion, no slow windup, no continuous syrupy easing. Cloth follows the body's acceleration instead of floating independently. Preserve straight thin sword edges and rigid limb proportions. Same original lean adult swordsmen: protagonist's low satgat hides eyes and nose, fitted frayed dark robe; opponent's lean angular face and narrow intent eyes, low open helmet, fitted narrow lamellar armor. Each has exactly one exceptionally long narrow single-edged blade, small guard, short blunt handle; empty scabbards at left hip. No speech, singing, added music, text or logos.\n\nCamera stays just behind the armored enemy's right shoulder, looking past it at the satgat hero. The hero immediately drives one quick grounded step inside the weapon guard, and sends one precise long-blade counter toward the enemy's sword guard. The enemy raises his own narrow blade to check it; contact is a brief crisp tap around 0.7 seconds, followed at once by the hero's wrist redirection to the outside. Feet stay grounded. No sword contacts a body. End with the hero close and the enemy's extended sword hand off balance, ready for a disarm. No slow mutual waving or idle circling.",
+      "negative_prompt": "CGI, 3D rendering, soft airbrushed skin, rounded cartoon face, bulky armor, short broad sword, cleaver, double-ended blade, duplicate sword, rubber arms, morphing hands, melting ink, slow motion, floating bodies, languid motion, blended frames, camera orbit, giant particle cloud, colored pigment, graphic injury"
+    },
+    {
+      "id": "F",
+      "title": "무장 해제와 결착",
+      "image": "assets/duel-v2/shot-F.png",
+      "start": 186,
+      "end": 190,
+      "generation_seconds": 4,
+      "trim_seconds": 4,
+      "playback_speed": 1,
+      "prompt": "Strictly 2D hand-drawn black ink action animation on pale aged Korean hanji, matching the supplied drawing throughout. Thin decisive brush contours, flat black shapes, bare-paper highlights, selective hatching; no volumetric modeling. Fast pose-to-pose action with distinct silhouettes and sharply timed spacing. Attack travel is a brief 0.2–0.4 second burst, impact is at most 1–2 frames, recoil immediately follows. No slow motion, no slow windup, no continuous syrupy easing. Cloth follows the body's acceleration instead of floating independently. Preserve straight thin sword edges and rigid limb proportions. Same original lean adult swordsmen: protagonist's low satgat hides eyes and nose, fitted frayed dark robe; opponent's lean angular face and narrow intent eyes, low open helmet, fitted narrow lamellar armor. Each has exactly one exceptionally long narrow single-edged blade, small guard, short blunt handle; empty scabbards at left hip. No speech, singing, added music, text or logos.\n\nKeep this low medium-wide camera. Continue from this exact pre-disarm crossing. Within 0.5 seconds the satgat hero applies one short quick wrist bind beneath the opponent's guard; at about 0.8 seconds the opponent loses grip on his ONE narrow sword. That sword drops ONCE to the ground and remains there, leaving his hand empty. The hero passes one low grounded step to the right, then stops with his own long sword held low. The enemy recoils off balance and freezes with an empty weapon hand. The final second holds the result: hero's blade in hand, enemy's single blade on ground, no extra weapons, no injury. One crisp final exchange and short aftermath, not another prolonged fight.",
+      "negative_prompt": "CGI, 3D rendering, soft airbrushed skin, rounded cartoon face, bulky armor, short broad sword, cleaver, double-ended blade, duplicate sword, rubber arms, morphing hands, melting ink, slow motion, floating bodies, languid motion, blended frames, camera orbit, giant particle cloud, colored pigment, graphic injury"
+    }
+  ],
+  "render_sharpen": 0.6
+}

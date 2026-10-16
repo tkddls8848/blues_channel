@@ -1,0 +1,53 @@
+바꿔 / Blender 전투 연출 시험
+
+목적
+유료 영상 생성 없이 하나의 공간에서 두 검객의 동작, 칼의 방향,
+공방의 시간과 카메라를 직접 수정하는 시퀀스를 만든다.
+현재 단계는 간략한 인물로 동작을 검토하는 애니매틱이다.
+요청한 베가본드 수준의 인체 드로잉이나 완성된 작화는 달성하지 못했다.
+
+출력
+renders/blender-duel/bakkuo-blender-animatic.mp4
+renders/blender-duel/bakkuo-ink-duel.blend
+renders/blender-duel/choreography.json
+scripts/blender_duel.py
+
+길이와 음악
+22초 / 960 x 540 / 24fps.
+제공한 곡의 2:48~3:10을 배경음으로 사용한다.
+2:48~2:50은 대치, 2:50부터 전투가 시작된다.
+원곡의 전체 2:35~2:49 고요한 구간은 이 시험에 포함되지 않는다.
+
+순서 (영상 내부 시간)
+0.0~2.0 대치
+2.0~4.0 주인공 무기 옆 시점의 첫 막기
+4.0~5.8 손과 칼날의 공방
+5.8~9.5 전신 구도에서 낮게 공격선을 벗어남
+9.5~11.6 상대 얼굴 반응
+11.6~13.3 상대 뒤쪽에서 보는 반격
+13.3~17.1 무장 해제와 지나감
+17.1~22.0 결착
+
+구현
+검객 두 명과 검은 각각 동일한 객체를 전 구간에서 사용한다.
+손과 칼을 동일한 그립 좌표로 배치하고, 팔과 다리는 두 마디 계산으로 연결한다.
+매 프레임에 위치와 회전을 기록해 중간 프레임이 임의로 바뀌지 않는다.
+충돌 구간의 짧은 정지와 공격 전후 자세를 키프레임으로 지정한다.
+자동 물리 시뮬레이션이나 완성된 전신 아마추어 리그는 아니다.
+작업본은 객체별로 구운 애니메이션이며, 동작 수정은 스크립트가 기준이다.
+
+한계
+옷과 손의 형태는 간략하며, 실제 천이나 손가락을 계산하지 않는다.
+인물의 날렵한 연기, 표정 변화, 체중 이동에는 추가 작업이 필요하다.
+현재 그림은 종이 질감의 셀 렌더이며 손으로 그린 먹선 애니메이션은 아니다.
+이 시험을 요청한 스타일의 완성 영상이라고 평가하지 않는다.
+
+재현 (PowerShell / 프로젝트 루트)
+& 'flows/.tools/blender/blender-4.5.9-windows-x64/blender.exe' --background --factory-startup --python-exit-code 1 --python flows/scripts/blender_duel.py -- --preview --render
+ffmpeg -y -framerate 24 -start_number 1 -i flows/renders/blender-duel/frames/frame-%04d.png -i flows/assets/audio/bakkuo-168-190.wav -c:v libx264 -crf 18 -pix_fmt yuv420p -c:a aac -b:a 192k -t 22 -movflags +faststart flows/renders/blender-duel/bakkuo-blender-animatic.mp4
+
+로컬 Blender 4.5.9 LTS 공식 휴대용 버전을 사용했다.
+기존 Blender 시스템 설치나 환경 변수는 변경하지 않았다.
+원본: https://download.blender.org/release/Blender4.5/blender-4.5.9-windows-x64.zip
+캐릭터 머리의 인체 베이스 출처와 CC0 라이선스는 assets/blender/SOURCES.txt에 있다.
+영상 생성 API는 호출하지 않았고 추가 API 요금은 없다.

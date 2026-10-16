@@ -1,0 +1,14 @@
+MakeHuman base mesh and two morph targets
+
+Project: https://github.com/makehumancommunity/makehuman
+Asset license: CC0 1.0 Universal (see MAKEHUMAN-LICENSE.md)
+License explanation: https://github.com/makehumancommunity/makehuman/blob/master/LICENSE.md
+
+Downloaded 2026-10-17 from the project's master branch:
+makehuman/data/3dobjs/base.obj
+makehuman/data/targets/macrodetails/asian-male-young.target
+makehuman/data/targets/macrodetails/universal-male-young-maxmuscle-minweight.target
+
+Only the head geometry is extracted. The rest of the figure, clothing, weapons,
+landscape, camera, material, and animation are authored in blender_duel.py.
+No MakeHuman application code or third-party clothing is included.

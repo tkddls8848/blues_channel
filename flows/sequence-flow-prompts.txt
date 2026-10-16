@@ -1,0 +1,43 @@
+GOOGLE FLOW / 2:35–3:10 / CURRENT CAMERA SEQUENCE
+
+주제: 빼앗긴 삶에 대한 복수가 잘못된 세상의 질서를 뒤집는 싸움으로 커진다.
+이상: 칼을 쥐지 않아도 자유롭게 살아갈 수 있는 세상.
+고요함 [155,170)초 / 전투 [170,190)초. 정확한 타격 프레임은 편집에서 원곡에 맞춘다.
+6장은 구도와 주요 자세를 제안한 이미지이며 모두를 시작 프레임으로 쓰지 않는다.
+준비 자세를 새로 만들거나 시안을 끝 프레임·구도 참조로 활용한다. 지원 기능과 생성 길이는 선택 모델에서 확인한다.
+공통 화풍과 인물 문장을 각 장면 프롬프트에 붙인다. 영상은 아직 생성하지 않았다.
+
+COMMON STYLE
+Black ink brush animation on pale aged Korean hanji. Paper yellowing is the only warm color. No colored pigment. Crisp tapered brush lines and clean black masses, sharp hands, blade contours and hat brim; restrained gray washes, minimal trailing-edge dry brush. Subtle stable paper fibers, no crawling grain, no fuzzy ink spreading, no heavy motion blur, no glossy CGI. Same original bridge and reed riverbank. No text, no dialogue, no singing or added music.
+
+CHARACTER LOCK
+The original Korean swordsman wears a broad low woven satgat firmly tied by its chin cord, hiding eyes and nose in shadow. Frayed dark dopo, cloth belt, one plain single-edged sword with scabbard fixed at left hip. No second sword. The opponent wears the same heavy dark lamellar armor and helmet with cheek guards, holding one sword. The opponent's face and reactions may be visible; never reveal the hero's eyes. Maintain anatomy, hat and weapon design across shots.
+
+SHOT 01 / 2:35–2:40 / START FRAME: assets/sequence/shot-01.png
+Maintain the very wide bridge confrontation exactly as framed. The swordsman stays at left, sword sheathed; commander waits at right. Neither advances. One reed tip barely moves and cloth settles. Fixed camera, enormous tense space between them. No attack or premature draw, no push-in that destroys the distance. Visual stillness, restrained breathing, stable paper.
+
+SHOT 02 / 2:40–2:45 / START FRAME: assets/sequence/shot-02.png
+A subjective vision of the freedom he once dreamed of. One sheathed sword rests on the rock; the unobstructed path runs toward the distant horizon. Hold the weapon completely still. A few leaves move slightly and the camera creeps toward the open path almost imperceptibly. No character or child enters. No sword floating, drawing itself or changing shape. Keep the open horizon calm, no magical dream effects.
+
+SHOT 03 / 2:45–2:50 / START FRAME: assets/sequence/shot-03.png
+Back in reality, the hero's right hand tightens subtly on the sword grip while the left stabilizes the scabbard. Hat brim keeps the eyes hidden. The sword stays sheathed; permit only a tiny release of the guard at the end. Fixed close camera and very restrained motion. Do not draw the sword fully before the cut. Keep fingers and guard crisp.
+
+DRAW INSERT / FIRST MOMENT AFTER 2:50 / MAKE A DEDICATED START FRAME
+Tight waist-level close-up, hero's right hand already on the hilt, left hand stabilizing the scabbard at left hip. One fast clean draw, blade slides forward out of the scabbard, camera tracks a short distance along the blade. One sword, stable hands, no extra arm. Keep the face outside frame. Generate with handles and use the brief strongest action in editing.
+
+SHOT 04 / 2:50–2:56 / COMPOSITION REFERENCE: assets/sequence/shot-04-camera-v2.png
+Camera travels just behind the swordsman's right forearm, inside his guard at upper-chest height. The near hand, hilt and blade dominate the lower-left foreground, with the armored enemy approaching from right beyond the weapon. The enemy makes one descending strike. The hero's guard rises and receives it once; the camera recoils briefly with the weapon but keeps coherent framing. Do not orbit outward to an external hero portrait. Correct two blades and distinct hands, no floating game camera or UI. Use a pre-contact start frame for the complete strike. If using the concept as a start frame, continue from its current weapon positions rather than recreating the approach.
+
+SHOT 05 / 2:56–3:03 / COMPOSITION REFERENCE: assets/sequence/shot-05-camera-v2.png
+Very wide low environmental camera far from the fighters, foreground reeds and rock, bridge visible left. Two small readable silhouettes in the middle distance. The heavy commander steps down from the small raised bank with one large descending attack; the satgat hero lowers himself and moves beneath the attack. One exchange and grounded landing, not prolonged hovering. Keep the camera outside the fighting space, show the entire geometry. Use a separate grounded preparation frame and the concept as a composition or action-apex reference. Split the overhead strike, evade and landing if one generation loses clear anatomy.
+
+SHOT 06 / 3:03–3:10 / REACTION REFERENCE: assets/sequence/shot-06-camera-v2.png
+Tight three-quarter close-up on the commander's exposed face within the helmet. A sharp blade passes through the lower-left foreground without injury. The commander realizes the counter, one eye widens, the jaw tightens and the shoulder pulls back. One brief believable reaction, no exaggerated scream or transformation. The hero remains offscreen; never turn this into a close-up of the hero. For a complete reaction, first create a composed pre-reaction start image in this exact framing and use this concept as the reaction target. If starting from the concept itself, continue with the recoil rather than reverting to calm. Use only a short moment of this shot in the edit, then cut to the counter and its wide result.
+
+CAMERA EDITING
+Show launch, subjective guard, weapon contact, distant battlefield, opponent's shoulder, failed strike, opponent reaction and wide outcome as short linked shots.
+The subjective view sits beside the hero's arm; it does not need to imitate a fixed first-person game view.
+Use a wide to establish position before changing the action axis.
+Cuts should connect force and consequence: attack -> weapon/space -> opponent's response.
+No auto slow motion for the entire fight. Add a brief contact hold only if useful once the actual music is in the editor.
+The detailed 35-second schedule and proposed insert cuts are in SEQUENCE.md.

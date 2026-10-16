@@ -1,0 +1,66 @@
+GOOGLE FLOW / INDIVIDUAL MOTION TESTS
+
+현재 2:35~3:10 시퀀스는 sequence-flow-prompts.txt와 SEQUENCE.md를 우선한다.
+이 파일은 초기 개별 동작 시험용이다. SHOT 02는 아이 대신 검객 자신의 이상으로 교체되었고,
+전투 카메라는 무기 옆 시점, 전장 전체, 상대 반응을 오가는 수정판을 사용한다.
+
+기준 이미지: assets/concept-04.png
+현재 설정: 낡은 한지, 무채색 먹, 명료한 윤곽, 얼굴을 가리는 한국식 삿갓.
+각 장면 프롬프트에 COMMON STYLE과 CHARACTER LOCK을 함께 넣는다.
+TEST 01만 현재 시안을 그대로 시작 프레임으로 사용한다.
+나머지는 해당 동작의 시작 자세에 맞는 별도 이미지를 준비한다.
+짧은 생성 길이를 지원하면 4초부터 시험하고 실제 편집에는 필요한 동작만 잘라 쓴다.
+현재 파일은 생성용 프롬프트이며 Flow 영상 결과는 아직 없다.
+
+COMMON STYLE
+Traditional black-ink brush animation on an old pale yellowed Korean mulberry-hanji sheet. The only warm tone is the bare aged paper. Black ink and controlled dilute gray ink only; no colored pigment, no red accents, no skin-tone paint. Clear, deliberate tapered brush contours, crisply bounded black masses and uncluttered negative space. Sword edges, hands, limbs and hat silhouette remain sharp throughout motion. Restrained dry-brush streaks only at trailing cloth edges. Minimal ink splatter. No fuzzy silhouettes, no global ink bleeding, no airbrush, no glossy CGI, no painted skin gradients. Paper fibers and age marks remain stable in screen space without flickering or crawling. No text, subtitles, logos, dialogue or singing. Use the supplied original character and location designs.
+
+CHARACTER LOCK
+An original adult Korean wandering swordsman in frayed dark dopo-inspired robes, a simple cloth belt and plain monochrome wrist tie, carrying exactly one simple single-edged sword. He wears a broad, shallow conical woven-straw Korean satgat, firmly secured with a thin chin cord. The forward-tilted brim covers his eyes and nose in a deep solid ink shadow. At most show a small part of his lower jaw and mouth. Never reveal his eyes, remove his hat or let the hat fly off during combat. Express intent through body angle, hands and stance. Keep the hat shape, body proportions, robe construction and sword design consistent.
+
+TEST 01 / IMPACT RECOIL / USE concept-04.png AS FIRST FRAME
+Begin exactly from the supplied blade-contact pose. Do not repeat the initial attack. The swordsman absorbs the pressure through his bent front knee, then braces and shifts his weight slightly backward while maintaining his guard against the armored opponent. The opponent presses once, then the pressure settles. One grounded, forceful recoil action, low camera, nearly fixed framing. Keep both blades in coherent contact before they separate slightly at the end. The satgat stays low and firmly attached; the face remains hidden. The robe's trailing edge settles after the recoil. Hands, blade edges and hat brim remain crisp. No new attack, no extra combatants, no magical effects, no slow floating movement, no dialogue or music. Generate at the shortest suitable supported duration; trim the strongest recoil moment in editing.
+
+ACTION 02 / COMPRESSED STANCE
+Use a dedicated pre-combat start image, not the blade-contact image. Medium-low side view, swordsman on left and the off-screen threat on right. He lowers his hips and bends his knees, shifting weight onto his rear foot while keeping one drawn sword steady. The satgat brim dips, covering the face completely. One short deliberate preparation; camera holds still. Readable feet and knees, controlled robe shapes, tense negative space around the blade.
+
+ACTION 03 / PUSH FROM THE GROUND
+Use a dedicated close-up start frame of the hero's rear sandal planted on wooden bridge boards. The foot drives hard against the boards and the heel lifts as weight transfers forward to the right. One brief grounded push-off. A few wood flecks move in the same direction as the force. Keep the board lines and foot contours crisp. Stationary close camera. Do not add a full body or a second foot into this tight frame.
+
+ACTION 04 / EXPLOSIVE ENTRY
+Use a dedicated wide side-view start frame with the swordsman already in a low ready stance and clear empty space ahead to the right. His rear foot pushes off; hips lead one fast low forward lunge, torso and sword follow. Low lateral tracking camera follows the same left-to-right direction. Keep the hat attached and face shadowed, feet grounded and anatomy coherent. Stop the action before weapon contact. Controlled acceleration followed by a planted landing. No second attack, no airborne somersault, no camera orbit, no heavy motion blur. Preserve crisp sword and hat edges.
+
+ACTION 05 / ONE BLADE COLLISION
+Use a dedicated pre-contact frame with two clearly separated fighters, the swordsman left and one armored commander right. The opponent delivers one downward strike; the swordsman meets it with one rising guard. Two blades contact once. Show hips and bent knees receiving the impact; maintain correct hands and one sword per fighter. Low three-quarter camera, restrained short forward tracking along the movement, no orbit. At contact use at most a few short black brush accents outside the hands. No extended combo, no additional enemy, no particle cloud, no magical beam. Keep the satgat low over the face. The brief impact hold will be added in editing.
+
+ACTION 06 / HOLD THE LINE
+Use a dedicated wide post-contact start frame with both fighters visible and sufficient space between them. The swordsman is pushed back half a step and plants his rear foot firmly, lowering his hips to stop the slide. His sword stays in guard. The opponent remains in place after applying pressure. Fixed wide camera, one recoil and recovery. The satgat stays attached; no exposed face. Make weight and ground friction visible, with very little splatter.
+
+STORY 07 / A SMALL KINDNESS
+Use a dedicated village start image. The child offers a small bowl of water to the seated swordsman, who accepts with one hand. His satgat stays on and shades his face as he tilts his head down. One gentle gesture, stationary medium shot. A plain monochrome paper pinwheel rests nearby. The bowl and fingers remain separated and clearly drawn. Pale ink cooking smoke only in the distant background.
+
+STORY 08 / HE STOPS LEAVING
+Use a dedicated start frame of the swordsman beginning to leave the bridge. He stops, then turns his shoulders toward the off-screen threat at the right. Keep the head tilted so the brim continues to cover the face. One deliberate turn, stationary medium-low view. His sword remains sheathed; reserve the draw for a separate shot.
+
+STORY 09 / SOMEONE STANDS BESIDE HIM
+Use a dedicated frame with the swordsman kneeling in the foreground, satgat still worn, and one adult villager behind. The villager steps beside him and stops. The swordsman steadies himself with one hand on the bridge. Slow gentle push-in, no new crowds. Convey resolve through posture without revealing the face.
+
+STORY 10 / THE MASK
+Use a dedicated close-up of the commander's old mask, drawn entirely in black and gray ink on the same aged paper. A single thin crack spreads across the mask and one tiny flake drops. Stationary camera, one symbolic action. No gold paint, no glossy metal, no face transformation, no gore.
+
+STORY 11 / TOMORROW
+Use a dedicated dawn frame with the same swordsman wearing his low satgat beside the child on the bridge. His sword is fully sheathed from the first frame. The child's uncolored paper pinwheel turns in a gentle breeze. The swordsman stays beside the child. Very slow pull-back. Distant dark washes thin, revealing more of the bare paper; do not introduce sunrise colors or white paint. End with quiet company and a stable hat silhouette.
+
+EDITING NOTES
+Build anticipation, push-off, entry, contact and recoil as separate shots.
+Keep combat direction left to right until a wide shot establishes a new axis.
+Use brief acceleration and grounded aftermath rather than continuous slow motion.
+Test a 2–3 frame contact hold in the editor, not as a long freeze in every generation.
+Keep all paper and ink effects subordinate to readable silhouettes.
+The 12-second cut in PLAN.md is an editorial proposal, not a timestamp analysis of the song or RISE.
+
+REFERENCES
+Song: https://www.youtube.com/watch?v=p4aCyJtGVm4
+Action direction: https://www.youtube.com/watch?v=fB8TyLTD7EE
+Production reference: https://forticheprod.com/portfolio/rise/
+Flow: https://support.google.com/flow/answer/16353334?hl=en

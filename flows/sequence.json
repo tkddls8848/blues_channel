@@ -1,0 +1,50 @@
+[
+  {
+    "id": "01",
+    "title": "폭풍전야의 대치",
+    "time": "2:35–2:40",
+    "start": 155,
+    "end": 160,
+    "image": "assets/sequence/shot-01.png"
+  },
+  {
+    "id": "02",
+    "title": "칼을 내려놓을 수 있는 세상",
+    "time": "2:40–2:45",
+    "start": 160,
+    "end": 165,
+    "image": "assets/sequence/shot-02.png"
+  },
+  {
+    "id": "03",
+    "title": "멈춘 숨과 칼자루",
+    "time": "2:45–2:50",
+    "start": 165,
+    "end": 170,
+    "image": "assets/sequence/shot-03.png"
+  },
+  {
+    "id": "04",
+    "title": "검객의 무기 너머로",
+    "time": "2:50–2:56",
+    "start": 170,
+    "end": 176,
+    "image": "assets/sequence/shot-04-camera-v2.png"
+  },
+  {
+    "id": "05",
+    "title": "전장을 가르는 두 실루엣",
+    "time": "2:56–3:03",
+    "start": 176,
+    "end": 183,
+    "image": "assets/sequence/shot-05-camera-v2.png"
+  },
+  {
+    "id": "06",
+    "title": "상대가 반격을 알아차리는 순간",
+    "time": "3:03–3:10",
+    "start": 183,
+    "end": 190,
+    "image": "assets/sequence/shot-06-camera-v2.png"
+  }
+]

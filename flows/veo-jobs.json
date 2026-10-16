@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "song": {
+    "url": "https://www.youtube.com/watch?v=p4aCyJtGVm4",
+    "start": 155,
+    "end": 190,
+    "audio": "assets/audio/bakkuo-155-190.wav"
+  },
+  "pricing_checked": "2026-10-17",
+  "shots": [
+    {
+      "id": "01",
+      "title": "폭풍전야의 대치",
+      "time": "2:35–2:40",
+      "start": 155,
+      "end": 160,
+      "image": "assets/sequence/shot-01.png",
+      "generation_seconds": 6,
+      "trim_seconds": 5,
+      "prompt": "Black ink brush animation on pale aged Korean hanji. Paper yellowing is the only warm color. No colored pigment. Crisp tapered brush lines and clean black masses, sharp hands, blade contours and hat brim; restrained gray washes, minimal trailing-edge dry brush. Subtle stable paper fibers, no crawling grain, no fuzzy ink spreading, no heavy motion blur, no glossy CGI. Same original bridge and reed riverbank. No text, no dialogue, no singing or added music.\n\nThe original Korean swordsman wears a broad low woven satgat firmly tied by its chin cord, hiding eyes and nose in shadow. Frayed dark dopo, cloth belt, one plain single-edged sword with scabbard fixed at left hip. No second sword. The opponent wears the same heavy dark lamellar armor and helmet with cheek guards, holding one sword. The opponent's face and reactions may be visible; never reveal the hero's eyes. Maintain anatomy, hat and weapon design across shots.\n\nBegin from the supplied wide bridge confrontation. Neither fighter advances. The sword stays sheathed. Only a very small movement of reeds, cloth and breathing. Fixed camera, no zoom, preserve the empty distance. Hold the tension throughout.\n\nSingle continuous shot. No added background music, speech, subtitles or text. Preserve paper grain without flicker."
+    },
+    {
+      "id": "02",
+      "title": "칼을 내려놓을 수 있는 세상",
+      "time": "2:40–2:45",
+      "start": 160,
+      "end": 165,
+      "image": "assets/sequence/shot-02.png",
+      "generation_seconds": 6,
+      "trim_seconds": 5,
+      "prompt": "Black ink brush animation on pale aged Korean hanji. Paper yellowing is the only warm color. No colored pigment. Crisp tapered brush lines and clean black masses, sharp hands, blade contours and hat brim; restrained gray washes, minimal trailing-edge dry brush. Subtle stable paper fibers, no crawling grain, no fuzzy ink spreading, no heavy motion blur, no glossy CGI. Same original bridge and reed riverbank. No text, no dialogue, no singing or added music.\n\nThe original Korean swordsman wears a broad low woven satgat firmly tied by its chin cord, hiding eyes and nose in shadow. Frayed dark dopo, cloth belt, one plain single-edged sword with scabbard fixed at left hip. No second sword. The opponent wears the same heavy dark lamellar armor and helmet with cheek guards, holding one sword. The opponent's face and reactions may be visible; never reveal the hero's eyes. Maintain anatomy, hat and weapon design across shots.\n\nThis is a subjective vision of the freedom he was denied. One sheathed sword rests completely still on the rock. A few leaves move gently beside an unobstructed path. Very slow subtle creep toward the open horizon. No person appears, no weapon floats, no magical dream effects.\n\nSingle continuous shot. No added background music, speech, subtitles or text. Preserve paper grain without flicker."
+    },
+    {
+      "id": "03",
+      "title": "멈춘 숨과 칼자루",
+      "time": "2:45–2:50",
+      "start": 165,
+      "end": 170,
+      "image": "assets/sequence/shot-03.png",
+      "generation_seconds": 6,
+      "trim_seconds": 5,
+      "prompt": "Black ink brush animation on pale aged Korean hanji. Paper yellowing is the only warm color. No colored pigment. Crisp tapered brush lines and clean black masses, sharp hands, blade contours and hat brim; restrained gray washes, minimal trailing-edge dry brush. Subtle stable paper fibers, no crawling grain, no fuzzy ink spreading, no heavy motion blur, no glossy CGI. Same original bridge and reed riverbank. No text, no dialogue, no singing or added music.\n\nThe original Korean swordsman wears a broad low woven satgat firmly tied by its chin cord, hiding eyes and nose in shadow. Frayed dark dopo, cloth belt, one plain single-edged sword with scabbard fixed at left hip. No second sword. The opponent wears the same heavy dark lamellar armor and helmet with cheek guards, holding one sword. The opponent's face and reactions may be visible; never reveal the hero's eyes. Maintain anatomy, hat and weapon design across shots.\n\nBegin from the supplied close-up. His right hand tightens subtly on the hilt, left hand steadies the scabbard. The sword remains sheathed, with at most a tiny release of the guard near the end. Hold the last breath before action. Fixed camera. Keep fingers stable and all eyes hidden.\n\nSingle continuous shot. No added background music, speech, subtitles or text. Preserve paper grain without flicker."
+    },
+    {
+      "id": "04",
+      "title": "검객의 무기 너머로",
+      "time": "2:50–2:56",
+      "start": 170,
+      "end": 176,
+      "image": "assets/sequence/shot-04-camera-v2.png",
+      "generation_seconds": 6,
+      "trim_seconds": 6,
+      "prompt": "Black ink brush animation on pale aged Korean hanji. Paper yellowing is the only warm color. No colored pigment. Crisp tapered brush lines and clean black masses, sharp hands, blade contours and hat brim; restrained gray washes, minimal trailing-edge dry brush. Subtle stable paper fibers, no crawling grain, no fuzzy ink spreading, no heavy motion blur, no glossy CGI. Same original bridge and reed riverbank. No text, no dialogue, no singing or added music.\n\nThe original Korean swordsman wears a broad low woven satgat firmly tied by its chin cord, hiding eyes and nose in shadow. Frayed dark dopo, cloth belt, one plain single-edged sword with scabbard fixed at left hip. No second sword. The opponent wears the same heavy dark lamellar armor and helmet with cheek guards, holding one sword. The opponent's face and reactions may be visible; never reveal the hero's eyes. Maintain anatomy, hat and weapon design across shots.\n\nBegin exactly from the supplied near-subjective weapon view, with the enemy already raising his sword. Camera stays close behind the hero's right forearm inside his guard. One fast downward enemy strike meets the hero's single rising guard, followed by a sharp brief recoil and separation. Two swords, coherent hands. Move at real combat speed with a decisive acceleration, not continuous slow motion. Follow weapon pressure without orbiting into an external portrait. One exchange only.\n\nSingle continuous shot. No added background music, speech, subtitles or text. Preserve paper grain without flicker."
+    },
+    {
+      "id": "05",
+      "title": "전장을 가르는 두 실루엣",
+      "time": "2:56–3:03",
+      "start": 176,
+      "end": 183,
+      "image": "assets/sequence/shot-05-camera-v2.png",
+      "generation_seconds": 8,
+      "trim_seconds": 7,
+      "prompt": "Black ink brush animation on pale aged Korean hanji. Paper yellowing is the only warm color. No colored pigment. Crisp tapered brush lines and clean black masses, sharp hands, blade contours and hat brim; restrained gray washes, minimal trailing-edge dry brush. Subtle stable paper fibers, no crawling grain, no fuzzy ink spreading, no heavy motion blur, no glossy CGI. Same original bridge and reed riverbank. No text, no dialogue, no singing or added music.\n\nThe original Korean swordsman wears a broad low woven satgat firmly tied by its chin cord, hiding eyes and nose in shadow. Frayed dark dopo, cloth belt, one plain single-edged sword with scabbard fixed at left hip. No second sword. The opponent wears the same heavy dark lamellar armor and helmet with cheek guards, holding one sword. The opponent's face and reactions may be visible; never reveal the hero's eyes. Maintain anatomy, hat and weapon design across shots.\n\nStart from this exact wide action-apex image. The commander is already in a short descending step; immediately continue downward into a grounded landing while the satgat hero lowers his center and slips past the descending sword. The opponent's stroke misses and reaches the ground, the hero plants his foot to counter. Do not restart the jump or keep either fighter floating. Fixed distant low camera, preserve the entire battlefield and the bridge at left. Fast exchange followed by readable weight and recovery. No extended combo.\n\nSingle continuous shot. No added background music, speech, subtitles or text. Preserve paper grain without flicker."
+    },
+    {
+      "id": "06",
+      "title": "상대가 반격을 알아차리는 순간",
+      "time": "3:03–3:10",
+      "start": 183,
+      "end": 190,
+      "image": "assets/sequence/shot-06-camera-v2.png",
+      "generation_seconds": 8,
+      "trim_seconds": 7,
+      "prompt": "Black ink brush animation on pale aged Korean hanji. Paper yellowing is the only warm color. No colored pigment. Crisp tapered brush lines and clean black masses, sharp hands, blade contours and hat brim; restrained gray washes, minimal trailing-edge dry brush. Subtle stable paper fibers, no crawling grain, no fuzzy ink spreading, no heavy motion blur, no glossy CGI. Same original bridge and reed riverbank. No text, no dialogue, no singing or added music.\n\nThe original Korean swordsman wears a broad low woven satgat firmly tied by its chin cord, hiding eyes and nose in shadow. Frayed dark dopo, cloth belt, one plain single-edged sword with scabbard fixed at left hip. No second sword. The opponent wears the same heavy dark lamellar armor and helmet with cheek guards, holding one sword. The opponent's face and reactions may be visible; never reveal the hero's eyes. Maintain anatomy, hat and weapon design across shots.\n\nBegin from the supplied opponent close-up, already surprised by the foreground blade. Continue his immediate shoulder and head recoil as the single foreground blade passes safely through the lower frame without injury. His visible eye tracks the threat and his jaw tightens. One brief realistic reaction, then a small pull-back reveals the weapon arm recovering its guard. Do not return him to an earlier calm expression. Never cut to the hero's face. No prolonged freeze, no screaming or gore.\n\nSingle continuous shot. No added background music, speech, subtitles or text. Preserve paper grain without flicker."
+    }
+  ]
+}

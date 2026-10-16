@@ -1,0 +1,17 @@
+# Local credentials.
+.env
+.env.*
+
+# Local dependencies and generated/private media.
+.tools/
+.venv/
+__pycache__/
+assets/audio/
+clips/
+renders/
+runs/
+cache/
+
+# Extracted reference footage and reproducible vector caches.
+references/*.jpg
+assets/gp-animation/
